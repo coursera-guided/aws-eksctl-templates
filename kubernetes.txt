@@ -1,0 +1,15 @@
+
+Metric Server
+https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+Kubernetes Dashboard
+https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.5/aio/deploy/recommended.yaml
+
+AWS EKS Permissions
+https://raw.githubusercontent.com/coursera-guided/aws-eks-templates/main/eks-admin-service-account.yaml
+
+Token Generation
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')
+
+Kubernetes Dashboard Proxy URL
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#!/login
