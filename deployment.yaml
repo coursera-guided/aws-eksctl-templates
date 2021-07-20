@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: website
-          image: 827905500843.dkr.ecr.us-west-1.amazonaws.com/website:latest
+          image: <your image here>
           ports:
             - containerPort: 8089
           resources:
